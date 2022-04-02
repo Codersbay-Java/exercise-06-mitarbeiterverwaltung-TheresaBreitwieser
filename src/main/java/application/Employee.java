@@ -3,10 +3,12 @@ package application;
 import java.util.Random;
 
 public class Employee {
+    static int employeeCounter=1;
 
     String firstName;
     String lastName;
     int id;
+    int employeeNumber;
     final Department dept;
 
 
@@ -15,6 +17,8 @@ public class Employee {
         this.lastName = lastName;
         this.id = getRandomID();
         this.dept = dept;
+        this.employeeNumber = employeeCounter;
+        employeeCounter++;
     }
 
 

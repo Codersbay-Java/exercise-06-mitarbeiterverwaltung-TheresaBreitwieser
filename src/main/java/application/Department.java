@@ -38,4 +38,8 @@ public class Department {
 		Random random=new Random();
 		return random.nextInt(1001);
 	}
+
+	public String toString() {
+		return this.name + " " + this.city + " " + this.country;
+	}
 }
